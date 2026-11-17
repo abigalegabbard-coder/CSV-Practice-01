@@ -7,7 +7,6 @@ with open(filepath, "r", newline="") as file:
     next(content)
     for name, score in content:
         score = int(score)
-        print(f"{name}: {score}")
         students.append([name, score])
         if score >= 70:
             with open("passed.csv", "a", newline="") as file:
